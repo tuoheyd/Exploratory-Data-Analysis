@@ -22,6 +22,7 @@ plot(reduced$Date, reduced$Sub_metering_1,
 lines(reduced$Date, reduced$Sub_metering_2, col="red")
 lines(reduced$Date, reduced$Sub_metering_3, col="blue")
 colors<-c("black", "red", 'blue')
-legend(x=strptime("2007-02-02  6:00:00", "%Y-%m-%d %H:%M:%S"), y=39,
-       legend=names(reduced)[7:9], col=colors, lwd=2)
+#legend(x=strptime("2007-02-02  6:00:00", "%Y-%m-%d %H:%M:%S"), y=39,
+#       legend=names(reduced)[7:9], col=colors, lwd=2)
+legend(x="topright", legend=names(reduced)[7:9], col=colors, lwd=2)
 dev.off() 
